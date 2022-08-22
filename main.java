@@ -16,7 +16,7 @@ public class main {
     public static void main(String [] args){
         String respuesta="";
         int respuestaN=0;
-        vehiculo vehiculo=new vehiculo();
+       
         coche coche=new coche();
         boolean diff=true;
         while(diff=true){
@@ -30,22 +30,22 @@ public class main {
                                  respuesta=(JOptionPane.showInputDialog(null,"digite el cilindrage"));
                                  coche.setcilindrado(respuesta);
                                   respuestaN=Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese el numero de llantas"));
-                                  vehiculo.setruedas(respuestaN);
+                                  coche.setruedas(respuestaN);
                                    respuestaN=Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese el kilometrage"));
                                   coche.setvelocidad(respuestaN);
                                   respuesta=(JOptionPane.showInputDialog(null,"digite el color"));
-                                 vehiculo.setcolor(respuesta);
+                                 coche.setcolor(respuesta);
                                   
                               break;
                                 case"2":
                                         respuesta=(JOptionPane.showInputDialog(null,"digite el cilindrage"));
                                  coche.setcilindrado(respuesta);
                                   respuestaN=Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese el numero de llantas"));
-                                  vehiculo.setruedas(respuestaN);
+                                  coche.setruedas(respuestaN);
                                    respuestaN=Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese el kilometrage"));
                                   coche.setvelocidad(respuestaN);
                                   respuesta=(JOptionPane.showInputDialog(null,"digite el color"));
-                                 vehiculo.setcolor(respuesta);
+                                 coche.setcolor(respuesta);
                               break;
                                 case"3":
                                     
@@ -59,12 +59,12 @@ public class main {
                     break;
                     case "2":
                         respuestaN=Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese el numero de llantas"));
-                        vehiculo.setruedas(respuestaN);
-                        if(vehiculo.ruedas==2){
+                        coche.setruedas(respuestaN);
+                        if(coche.ruedas==2){
                               JOptionPane.showMessageDialog(null,"Motocicletas:\nyamaha\nsuzuki\nharley\ntoyota");
                                JOptionPane.showMessageDialog(null,"Bicicletas:\nbmx\ndrake\nscott\nshimano");
                         }
-                        if(vehiculo.ruedas==4){
+                        if(coche.ruedas==4){
                               JOptionPane.showMessageDialog(null,"Carros:\ntoyota\n nissan\ncamaro\ntesla");
                              JOptionPane.showMessageDialog(null,"Camionetas:\ntoyota\n nissan\ncamaro"); 
                         }
