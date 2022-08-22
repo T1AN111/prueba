@@ -26,7 +26,7 @@ public class main {
                       respuesta=JOptionPane.showInputDialog(null,"selecciones una opcion\n1-carros\n2-motocicletas\n3bicicletas\n4camionetas");
                       switch(respuesta){
                           case"1":
-                               JOptionPane.showMessageDialog(null,"toyota\n nissan\ncamaro\ntesla");
+                               JOptionPane.showMessageDialog(null,"testtoyota\n nissan\ncamaro\ntesla");
                               break;
                                 case"2":
                                      JOptionPane.showMessageDialog(null,"yamaha\nsuzuki\nharley\ntoyota");
