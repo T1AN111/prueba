@@ -17,25 +17,43 @@ public class main {
         String respuesta="";
         int respuestaN=0;
         vehiculo vehiculo=new vehiculo();
+        coche coche=new coche();
         boolean diff=true;
         while(diff=true){
-        respuesta=JOptionPane.showInputDialog(null,"selecciones una opcion\n1-ver lista\n2-filtrar por ruedas\n3salir");
+        respuesta=JOptionPane.showInputDialog(null,"selecciones una opcion\n1-asignar cosas\n2-filtrar por ruedas\n3salir");
        
         switch(respuesta){
                 case "1":
                       respuesta=JOptionPane.showInputDialog(null,"selecciones una opcion\n1-carros\n2-motocicletas\n3bicicletas\n4camionetas");
                       switch(respuesta){
                           case"1":
-                               JOptionPane.showMessageDialog(null,"toyota\n nissan\ncamaro\ntesla");
+                                 respuesta=(JOptionPane.showInputDialog(null,"digite el cilindrage"));
+                                 coche.setcilindrado(respuesta);
+                                  respuestaN=Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese el numero de llantas"));
+                                  vehiculo.setruedas(respuestaN);
+                                   respuestaN=Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese el kilometrage"));
+                                  coche.setvelocidad(respuestaN);
+                                  respuesta=(JOptionPane.showInputDialog(null,"digite el color"));
+                                 vehiculo.setcolor(respuesta);
+                                  
                               break;
                                 case"2":
-                                     JOptionPane.showMessageDialog(null,"yamaha\nsuzuki\nharley\ntoyota");
+                                        respuesta=(JOptionPane.showInputDialog(null,"digite el cilindrage"));
+                                 coche.setcilindrado(respuesta);
+                                  respuestaN=Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese el numero de llantas"));
+                                  vehiculo.setruedas(respuestaN);
+                                   respuestaN=Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese el kilometrage"));
+                                  coche.setvelocidad(respuestaN);
+                                  respuesta=(JOptionPane.showInputDialog(null,"digite el color"));
+                                 vehiculo.setcolor(respuesta);
                               break;
                                 case"3":
-                                     JOptionPane.showMessageDialog(null,"bmx\ndrake\nscott\nshimano");
+                                    
                               break;
+                                    
+                              
                                 case"4":
-                                     JOptionPane.showMessageDialog(null,"toyota\n nissan\ncamaro\ntesla");
+                                    
                               break;
                       }
                     break;
